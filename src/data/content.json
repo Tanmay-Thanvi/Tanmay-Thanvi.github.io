@@ -1,0 +1,886 @@
+{
+  "_edit": "Edit this file only. Set visible to true/false to show or hide a block. Empty logoUrl falls back to the letter mark. Phone stays null until you set it.",
+  "site": {
+    "title": "Tanmay Thanvi — Software Engineer",
+    "description": "Backend-focused software engineer building reliable APIs, platforms, and cloud systems.",
+    "canonical": "https://www.tnt-portfolio.com/",
+    "ogTitle": "Tanmay Thanvi — Software Engineer",
+    "ogDescription": "Backend-focused software engineer building reliable APIs, platforms, and cloud systems."
+  },
+  "identity": {
+    "name": "Tanmay Thanvi",
+    "shortName": "Tanmay",
+    "initials": "TT",
+    "title": "Backend Engineer",
+    "oneLiner": "Backend Engineer with 2+ years of AdTech experience across PubMatic and DeepIntent, specializing in Java, Go, distributed systems, scalable APIs, and AI/LLM-powered backend systems.",
+    "differentiator": "AdTech + Distributed Systems + AI",
+    "summary": "Backend engineer focused on distributed systems in AdTech / DSP.",
+    "years": "2+ years",
+    "email": "tanmaythanvi15@gmail.com",
+    "phone": null,
+    "location": "Pune, India",
+    "locationFull": "Pune, Maharashtra, India",
+    "city": "Pune",
+    "timezone": "UTC +05:30",
+    "remote": "Open to global remote teams",
+    "availability": "Open to conversations"
+  },
+  "links": {
+    "resume": {
+      "label": "Download CV",
+      "href": "resume.pdf"
+    },
+    "downloadResume": {
+      "label": "Download resume",
+      "href": "resume.pdf"
+    },
+    "linkedin": {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/tanmay-thanvi"
+    },
+    "github": {
+      "label": "GitHub",
+      "href": "https://github.com/Tanmay-Thanvi"
+    },
+    "email": {
+      "label": "Email",
+      "href": "mailto:tanmaythanvi15@gmail.com"
+    },
+    "site": {
+      "label": "Site",
+      "href": "https://www.tnt-portfolio.com"
+    }
+  },
+  "rail": {
+    "meta": [
+      {
+        "id": "email",
+        "label": "Email",
+        "value": "tanmaythanvi15@gmail.com",
+        "visible": true,
+        "icon": "mail"
+      },
+      {
+        "id": "location",
+        "label": "Location",
+        "value": "Pune, India",
+        "visible": true,
+        "icon": "map"
+      },
+      {
+        "id": "timezone",
+        "label": "Time zone",
+        "value": "UTC +05:30",
+        "visible": true,
+        "icon": "clock"
+      }
+    ]
+  },
+  "nav": [
+    {
+      "id": "experience",
+      "label": "Experience",
+      "visible": true
+    },
+    {
+      "id": "skills",
+      "label": "Skills",
+      "visible": true
+    },
+    {
+      "id": "education",
+      "label": "Education",
+      "visible": true
+    },
+    {
+      "id": "work",
+      "label": "Work",
+      "visible": true
+    },
+    {
+      "id": "leadership",
+      "label": "Leadership",
+      "visible": false
+    },
+    {
+      "id": "certifications",
+      "label": "Certifications",
+      "visible": false
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "visible": true
+    }
+  ],
+  "copy": {
+    "currentBadge": "Current",
+    "contactHeadline": "Let's build reliable systems together",
+    "contactBody": "Open to conversations about backend, platform, and AdTech roles.",
+    "exceptionalAbility": "I’m most proud of designing and building a distributed Rate Limiter for our API Gateway when I had only around five months of professional experience. I took ownership of it myself and designed it to be fully config-driven, so limits, bucket sizes, and even the algorithm could be changed without touching the code. It became a scalable and reusable solution for the team."
+  },
+  "experience": [
+    {
+      "id": "deepintent",
+      "company": "DeepIntent",
+      "role": "Software Engineer",
+      "dates": "Aug 2024 – Present",
+      "current": true,
+      "visible": true,
+      "mark": "D",
+      "logoUrl": "logos/deepintent.jpg",
+      "logoUrlDark": "logos/deepintent.jpg",
+      "companyUrl": "https://www.deepintent.com",
+      "location": "Pune, Maharashtra, India",
+      "domain": "AdTech / DSP",
+      "summary": "Owned and built a distributed rate limiter on the Go API gateway, improving system stability and protecting downstream services.",
+      "stack": [
+        "Java",
+        "Spring",
+        "GraphQL",
+        "Kafka",
+        "Redis"
+      ],
+      "architecture": [
+        "Microservices",
+        "Go API gateway",
+        "Java + Spring Boot services",
+        "GraphQL",
+        "Redis",
+        "Kafka",
+        "Kubernetes",
+        "Docker",
+        "MySQL",
+        "ClickHouse",
+        "BigQuery",
+        "Google Cloud Storage",
+        "AWS S3",
+        "Druid",
+        "OpenTelemetry",
+        "Tempo",
+        "Loki"
+      ],
+      "domainAreas": [
+        "Campaign management",
+        "Inventory management",
+        "Audience handling",
+        "Reporting and measurement",
+        "Outcomes",
+        "Publisher Marketplace",
+        "User spend analysis",
+        "Druid-powered dashboards"
+      ],
+      "achievements": [
+        "Owned the rate limiter end-to-end on the AdTech/DSP platform.",
+        "Built and maintained distributed, scalable backend services.",
+        "Day-to-day with Java, Spring Boot, GraphQL, Kafka, Redis, and Kubernetes."
+      ]
+    },
+    {
+      "id": "pubmatic",
+      "company": "PubMatic",
+      "role": "Software Engineer",
+      "dates": "2024",
+      "current": false,
+      "visible": true,
+      "mark": "P",
+      "logoUrl": "logos/pubmatic.png",
+      "logoUrlDark": "logos/pubmatic-dark.jpg",
+      "logoFill": true,
+      "companyUrl": "https://pubmatic.com",
+      "location": "Pune, India",
+      "domain": "AdTech / DSP",
+      "team": "Activate — DSP Bidder Team",
+      "summary": "Activate DSP bidder team.",
+      "stack": [
+        "Go"
+      ],
+      "architecture": [
+        "Golang",
+        "DSP bidding",
+        "Backend services",
+        "Distributed systems"
+      ],
+      "domainAreas": [
+        "DSP",
+        "AdTech",
+        "Bidding"
+      ],
+      "achievements": [
+        "Contributed to distributed backend systems on a programmatic advertising platform.",
+        "Worked inside high-throughput AdTech and DSP systems."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "languages",
+      "label": "Languages",
+      "visible": true,
+      "items": [
+        "Java",
+        "Go",
+        "Python",
+        "SQL",
+        "C++"
+      ]
+    },
+    {
+      "id": "databases",
+      "label": "Databases",
+      "visible": true,
+      "items": [
+        "MySQL",
+        "PostgreSQL",
+        "ClickHouse"
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "Backend",
+      "visible": true,
+      "items": [
+        "Spring Boot",
+        "GraphQL",
+        "REST APIs",
+        "Django",
+        "Django REST Framework",
+        "FastAPI"
+      ]
+    },
+    {
+      "id": "systems",
+      "label": "Distributed systems",
+      "visible": true,
+      "items": [
+        "Kafka",
+        "Redis",
+        "Debezium",
+        "Microservices",
+        "Event-driven architecture"
+      ]
+    },
+    {
+      "id": "infra",
+      "label": "Cloud & infrastructure",
+      "visible": true,
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "OpenTelemetry"
+      ]
+    },
+    {
+      "id": "ai",
+      "label": "AI / LLM",
+      "visible": false,
+      "items": [
+        "OpenAI",
+        "LangChain",
+        "LangGraph",
+        "MCP",
+        "AI Agents",
+        "RAG"
+      ]
+    },
+    {
+      "id": "data",
+      "label": "Data",
+      "visible": false,
+      "items": [
+        "Airflow",
+        "Spark"
+      ]
+    },
+    {
+      "id": "cloud",
+      "label": "Cloud extra",
+      "visible": false,
+      "items": [
+        "ArgoCD",
+        "Jenkins",
+        "AWS S3",
+        "GCS"
+      ]
+    },
+    {
+      "id": "observability",
+      "label": "Observability",
+      "visible": false,
+      "items": [
+        "OpenTelemetry",
+        "Grafana",
+        "Tempo",
+        "Loki"
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "Tools",
+      "visible": false,
+      "items": [
+        "Git",
+        "Maven",
+        "IntelliJ",
+        "Postman"
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "Frontend / other",
+      "visible": false,
+      "items": [
+        "React",
+        "Flutter",
+        "TypeScript"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "pict",
+      "visible": true,
+      "school": "PICT",
+      "full": "Pune Institute of Computer Technology",
+      "university": "Savitribai Phule Pune University",
+      "degree": "B.E. Computer Engineering",
+      "dates": "2020–24",
+      "datesLong": "2020 – 2024",
+      "location": "Pune, India",
+      "score": "CGPA 9.1",
+      "mark": "P",
+      "logoUrl": "logos/pict.png"
+    }
+  ],
+  "academics": [
+    {
+      "id": "tenth",
+      "label": "10th",
+      "value": "95.6%",
+      "visible": false
+    },
+    {
+      "id": "twelfth",
+      "label": "12th",
+      "value": "94%",
+      "visible": false
+    },
+    {
+      "id": "jee",
+      "label": "JEE Main",
+      "value": "98.1 percentile — All India",
+      "visible": false
+    },
+    {
+      "id": "mhtcet",
+      "label": "MHT-CET",
+      "value": "State Rank: 340",
+      "visible": false
+    }
+  ],
+  "work": [
+    {
+      "id": "rate-limiter",
+      "name": "Distributed Rate Limiter",
+      "role": "Backend · DeepIntent",
+      "kind": "company",
+      "visible": true,
+      "safeToPublish": true,
+      "featured": true,
+      "screenshot": "",
+      "logoUrl": "",
+      "href": "",
+      "text": "Gateway-level limiter with MySQL config, Debezium sync, and Redis enforcement. Sliding window, token bucket, and leaky bucket behind configuration.",
+      "stack": [
+        "Go",
+        "Redis",
+        "MySQL",
+        "Debezium"
+      ],
+      "architecture": "Gateway → configuration → MySQL → Debezium → Redis → request enforcement",
+      "details": {
+        "configFields": [
+          "ratelimiterName",
+          "algoName",
+          "configJson"
+        ],
+        "dimensions": [
+          "User-level limits",
+          "Generic/global limits"
+        ],
+        "algorithms": [
+          "Sliding Window",
+          "Token Bucket",
+          "Leaky Bucket"
+        ],
+        "redis": [
+          "Redis JSON",
+          "Redis Sentinel",
+          "Redis failover",
+          "Redis-backed dynamic configuration"
+        ]
+      },
+      "metrics": []
+    },
+    {
+      "id": "terminal-portfolio",
+      "name": "Terminal Portfolio",
+      "role": "Personal",
+      "kind": "personal",
+      "visible": true,
+      "safeToPublish": true,
+      "featured": true,
+      "screenshot": "",
+      "logoUrl": "",
+      "href": "https://github.com/Tanmay-Thanvi",
+      "text": "Terminal-styled site with a Go backend and a self-contained RAG assistant.",
+      "stack": [
+        "Go",
+        "Next.js",
+        "SQLite",
+        "RAG"
+      ],
+      "metrics": []
+    },
+    {
+      "id": "image-piracy",
+      "name": "Image Piracy Detection",
+      "role": "College · Veritas-sponsored",
+      "kind": "side",
+      "visible": true,
+      "safeToPublish": true,
+      "featured": false,
+      "screenshot": "",
+      "logoUrl": "",
+      "href": "",
+      "text": "Detect pirated images across social platforms. Django backend, Go crawler, Python fingerprinting, PostgreSQL.",
+      "stack": [
+        "Django",
+        "Go",
+        "Python",
+        "PostgreSQL",
+        "Apify",
+        "Goqite"
+      ],
+      "metrics": []
+    },
+    {
+      "id": "media-packages",
+      "name": "Media Packages Platform",
+      "role": "Backend · DeepIntent",
+      "kind": "company",
+      "visible": false,
+      "safeToPublish": false,
+      "logoUrl": "",
+      "href": "",
+      "text": "Backend platform used across campaigns — media packages, campaign inventory, APIs, and production workflows.",
+      "stack": [
+        "Java",
+        "APIs"
+      ],
+      "metrics": [
+        {
+          "label": "Active campaigns",
+          "value": "1,031+",
+          "safeToPublish": false
+        }
+      ]
+    },
+    {
+      "id": "publisher-intel",
+      "name": "Publisher Intelligence Platform",
+      "role": "Backend / data · DeepIntent",
+      "kind": "company",
+      "visible": false,
+      "safeToPublish": false,
+      "logoUrl": "",
+      "href": "",
+      "text": "Backend and data-pipeline work on a large publisher dataset used by downstream applications.",
+      "stack": [
+        "Python",
+        "Airflow",
+        "MySQL",
+        "Druid"
+      ],
+      "metrics": [
+        {
+          "label": "Publisher records / day",
+          "value": "5M+",
+          "safeToPublish": false
+        },
+        {
+          "label": "Publishers",
+          "value": "200K+",
+          "safeToPublish": false
+        }
+      ]
+    },
+    {
+      "id": "recommendation-engine",
+      "name": "Inventory Recommendation Engine",
+      "role": "Backend · DeepIntent",
+      "kind": "company",
+      "visible": false,
+      "safeToPublish": false,
+      "logoUrl": "",
+      "href": "",
+      "text": "Inventory recommendation system connecting backend APIs with data-science services over async workflows and WebSockets.",
+      "stack": [
+        "Python",
+        "APIs",
+        "WebSocket"
+      ],
+      "metrics": []
+    },
+    {
+      "id": "daksh",
+      "name": "Daksh — AI Campaign Alerting",
+      "role": "Backend · DeepIntent",
+      "kind": "company",
+      "visible": false,
+      "safeToPublish": false,
+      "logoUrl": "",
+      "href": "",
+      "text": "AI-powered campaign alerting. Campaign events generated automated alerts and workflows.",
+      "stack": [
+        "Kafka",
+        "OpenAI",
+        "Slack",
+        "Java"
+      ],
+      "metrics": [
+        {
+          "label": "Campaigns",
+          "value": "~4,930",
+          "safeToPublish": false
+        }
+      ]
+    },
+    {
+      "id": "inventory-data",
+      "name": "Inventory / Data Engineering",
+      "role": "Data exposure · DeepIntent",
+      "kind": "company",
+      "visible": false,
+      "safeToPublish": false,
+      "logoUrl": "",
+      "href": "",
+      "text": "Data-side initiatives: inventory strategy, deal health forecasting, commitment tracker.",
+      "stack": [
+        "Spark",
+        "Airflow",
+        "Druid",
+        "MySQL",
+        "BigQuery",
+        "GCS",
+        "AWS S3"
+      ],
+      "metrics": []
+    },
+    {
+      "id": "mcp-graphql",
+      "name": "MCP GraphQL Adapter",
+      "role": "AI / platform",
+      "kind": "side",
+      "visible": false,
+      "safeToPublish": false,
+      "logoUrl": "",
+      "href": "",
+      "text": "Exposes GraphQL APIs as MCP tools, dynamically registers them, and lets agents call existing APIs through a runtime registry.",
+      "stack": [
+        "MCP",
+        "GraphQL",
+        "AI agents"
+      ],
+      "metrics": []
+    },
+    {
+      "id": "observability",
+      "name": "Distributed tracing / observability",
+      "role": "Platform · DeepIntent",
+      "kind": "company",
+      "visible": false,
+      "safeToPublish": false,
+      "logoUrl": "",
+      "href": "",
+      "text": "OpenTelemetry + Tempo + Loki. Tracing for inter-service calls and MySQL. Exploring Redis, ClickHouse, BigQuery, GCS, S3, Lambda, HTTP.",
+      "stack": [
+        "OpenTelemetry",
+        "Tempo",
+        "Loki",
+        "Grafana"
+      ],
+      "metrics": []
+    },
+    {
+      "id": "notifications",
+      "name": "Notification system (design)",
+      "role": "LLD / HLD",
+      "kind": "side",
+      "visible": false,
+      "safeToPublish": false,
+      "logoUrl": "",
+      "href": "",
+      "text": "Spring WebFlux + SSE + Sinks.Many + Redis Pub/Sub. Replay, missed notifications, persistence.",
+      "stack": [
+        "Spring Boot",
+        "WebFlux",
+        "SSE",
+        "Redis"
+      ],
+      "metrics": []
+    },
+    {
+      "id": "exocortex",
+      "name": "Exocortex",
+      "role": "Personal AI concept",
+      "kind": "personal",
+      "visible": false,
+      "safeToPublish": false,
+      "logoUrl": "",
+      "href": "",
+      "text": "Personal/company AI operating layer over repos, documents, Jira, Slack, meetings, and workflows. GraphRAG, agents, MCP, long-term memory.",
+      "stack": [
+        "GraphRAG",
+        "MCP",
+        "Agents"
+      ],
+      "metrics": []
+    },
+    {
+      "id": "pict-forum",
+      "name": "PICT Discussion Forum",
+      "role": "College · May 2021 – Aug 2021",
+      "kind": "side",
+      "visible": false,
+      "safeToPublish": true,
+      "logoUrl": "",
+      "href": "",
+      "text": "Internet discussion/forum platform for longer-form posts.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ],
+      "metrics": []
+    },
+    {
+      "id": "reverse-coding",
+      "name": "Reverse Coding — Credenz-22",
+      "role": "College · PISB",
+      "kind": "side",
+      "visible": false,
+      "safeToPublish": true,
+      "logoUrl": "",
+      "href": "",
+      "text": "Online coding quiz platform for Credenz-22. Complete backend. Played by 250+ students.",
+      "stack": [
+        "Django",
+        "Django REST Framework"
+      ],
+      "metrics": [
+        {
+          "label": "Players",
+          "value": "250+",
+          "safeToPublish": true
+        }
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "id": "pisb",
+      "org": "PICT IEEE Student Branch (PISB)",
+      "role": "Technical Head",
+      "linkedinTitle": "Volunteer — PICT IEEE Student Branch",
+      "dates": "Dec 2021 – Mar 2022",
+      "visible": false,
+      "logoUrl": "",
+      "text": "Technical leadership for IEEE student branch. Built Reverse Coding backend for Credenz-22.",
+      "stack": [
+        "Django",
+        "Django REST Framework",
+        "Flutter"
+      ]
+    },
+    {
+      "id": "pcsb",
+      "org": "PICT CSI Student Branch (PCSB)",
+      "role": "Mobile App Head",
+      "dates": "",
+      "visible": false,
+      "logoUrl": "",
+      "text": "Led an app team of nearly 25 students.",
+      "stack": [
+        "Flutter"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "kodekloud-ai-agent",
+      "name": "YouTube Labs — AI Agent Fundamentals",
+      "issuer": "KodeKloud",
+      "issued": "April 2026",
+      "credentialId": "",
+      "logoUrl": "",
+      "visible": false
+    },
+    {
+      "id": "codiesalert-solidity",
+      "name": "Solidity Zero to Hero Course",
+      "issuer": "CodiesAlert",
+      "issued": "October 2022",
+      "credentialId": "a84702633e8f908f",
+      "logoUrl": "",
+      "visible": true
+    },
+    {
+      "id": "greatlearning-python",
+      "name": "Backend Web Development using Python",
+      "issuer": "Great Learning",
+      "issued": "February 2022",
+      "credentialId": "",
+      "logoUrl": "",
+      "visible": true
+    },
+    {
+      "id": "dell-fullstack",
+      "name": "FullStack Web Development (React + Django)",
+      "issuer": "Dell Technologies",
+      "issued": "June 2021",
+      "credentialId": "44043",
+      "logoUrl": "",
+      "visible": true
+    },
+    {
+      "id": "kodekloud-ai-llm-rag",
+      "name": "AI Labs — LLM & RAG Systems",
+      "issuer": "KodeKloud",
+      "issued": "",
+      "credentialId": "",
+      "logoUrl": "",
+      "visible": true
+    },
+    {
+      "id": "udemy-golang-concurrency",
+      "name": "Concurrency in Go (Golang)",
+      "issuer": "Udemy",
+      "issued": "November 2025",
+      "credentialId": "UC-f4b9a9e1-5d3c-4832-b7cc-67bba8b02ea2",
+      "logoUrl": "",
+      "visible": true
+    },
+    {
+      "id": "iitkgp-python-basics",
+      "name": "Basics of Python Programming",
+      "issuer": "IIT Kharagpur (via VOICE, Pune)",
+      "issued": "November 2020",
+      "credentialId": "ENP20761",
+      "logoUrl": "",
+      "visible": false
+    },
+    {
+      "id": "skillup-fullstack",
+      "name": "Full Stack Development for Beginners",
+      "issuer": "SkillUp by Simplilearn",
+      "issued": "November 2022",
+      "credentialId": "3922648",
+      "logoUrl": "",
+      "visible": false
+    }
+  ],
+  "highlights": {
+    "_edit": "Same visible:true/false pattern as everywhere else. openSource item status is 'merged', 'published', or 'in-progress' (controls the badge). blogPosts below are placeholder samples to preview the layout — swap in real posts/links. achievements is empty pending the design discussion.",
+    "headline": "Engineering beyond the day job",
+    "subline": "Open-source work, continuous learning, and technical writing.",
+    "openSource": [
+      {
+        "id": "prebid-server-video",
+        "name": "Prebid Server",
+        "mark": "P",
+        "logoUrl": "",
+        "kind": "Open-source contribution",
+        "status": "in-progress",
+        "repo": "prebid/prebid-server",
+        "href": "https://github.com/prebid/prebid-server",
+        "text": "Adding video ad support to the DeepIntent bid adapter.",
+        "stack": ["Go"],
+        "meta": "Work in progress — PR link coming soon",
+        "visible": true
+      }
+    ],
+    "achievements": [
+      {
+        "id": "gdsc-devheat",
+        "title": "DevHeat Devsprint",
+        "subtitle": "Team PICTIANS — Google Developer Student Clubs, IIIT Surat",
+        "meta": "60-hour devsprint · November 2021",
+        "visible": true
+      }
+    ],
+    "blogPosts": [
+      {
+        "id": "sample-linkedin-rate-limiter",
+        "kind": "linkedin",
+        "title": "Shipping a config-driven rate limiter at DeepIntent",
+        "text": "A short recap of designing a gateway-level rate limiter that's fully config-driven — no code changes needed to adjust limits, bucket sizes, or the algorithm itself.",
+        "href": "",
+        "date": "",
+        "readTime": "",
+        "visible": true
+      },
+      {
+        "id": "sample-blog-rag-portfolio",
+        "kind": "blog",
+        "title": "Building a self-contained RAG assistant for my terminal portfolio",
+        "text": "Notes on wiring a lightweight retrieval-augmented assistant into a Go-backed terminal-styled site, without leaning on an external vector DB.",
+        "href": "",
+        "date": "",
+        "readTime": "",
+        "visible": true
+      }
+    ]
+  },
+  "notes": {
+    "doNotClaim": [
+      "Open-source maintainer / significant OSS contributions",
+      "Linux expert / kernel / packaging",
+      "Kubernetes cluster administrator",
+      "Owner of Jenkins / CI platform",
+      "Generic Java CRUD developer as the headline"
+    ],
+    "honestLimits": [
+      "Primary development environment is macOS, comfortable with terminal/bash, can adapt to Linux.",
+      "Kubernetes: production exposure through existing pipelines, not cluster admin.",
+      "Jenkins: consume/work with existing pipelines, did not own the infrastructure.",
+      "Cloud: AWS S3 and GCS integration; not Lambda estate or cloud admin.",
+      "Data engineering is secondary exposure, not the headline identity.",
+      "Feature flags are primarily handled by product owners."
+    ],
+    "verifyBeforePublish": [
+      "Exact DeepIntent title and dates",
+      "Exact PubMatic title and dates",
+      "1,031+ active campaigns",
+      "5M+ publisher records/day",
+      "200K+ publishers",
+      "~4,930 Daksh campaigns",
+      "Which rate-limiter and AI items shipped vs designed",
+      "Certifications to include",
+      "Project / repository links"
+    ]
+  },
+  "skillsOnPage": [
+    "Java",
+    "Go",
+    "MySQL",
+    "Spring Boot",
+    "GraphQL",
+    "REST APIs",
+    "Kafka",
+    "Redis",
+    "Docker"
+  ]
+}
