@@ -12,9 +12,9 @@
     "shortName": "Tanmay",
     "initials": "TT",
     "title": "Backend Engineer",
-    "oneLiner": "Backend Engineer with 2+ years of AdTech experience across PubMatic and DeepIntent, specializing in Java, Go, distributed systems, scalable APIs, and AI/LLM-powered backend systems.",
+    "oneLiner": "Backend engineer with 2+ years in AdTech at PubMatic and DeepIntent — Java, Go, distributed systems, scalable APIs, and AI/LLM backends.",
     "differentiator": "AdTech + Distributed Systems + AI",
-    "summary": "Backend engineer focused on distributed systems in AdTech / DSP.",
+    "summary": "I turn AdTech / DSP requirements into dependable backend systems — from gateway rate limiting and real-time bidding to GraphQL APIs, data pipelines, and AI-assisted tooling.",
     "years": "2+ years",
     "email": "tanmaythanvi15@gmail.com",
     "phone": null,
@@ -28,11 +28,11 @@
   "links": {
     "resume": {
       "label": "Download CV",
-      "href": "resume.pdf"
+      "href": "https://drive.google.com/file/d/1z23xKpjojJqpx8C93xOyoMMbfXeVj0lD/view?usp=sharing"
     },
     "downloadResume": {
       "label": "Download resume",
-      "href": "resume.pdf"
+      "href": "https://drive.google.com/file/d/1z23xKpjojJqpx8C93xOyoMMbfXeVj0lD/view?usp=sharing"
     },
     "linkedin": {
       "label": "LinkedIn",
@@ -115,9 +115,10 @@
   ],
   "copy": {
     "currentBadge": "Current",
-    "contactHeadline": "Let's build reliable systems together",
+    "contactHeadline": "Let’s build what’s next.",
     "contactBody": "Open to conversations about backend, platform, and AdTech roles.",
-    "exceptionalAbility": "I’m most proud of designing and building a distributed Rate Limiter for our API Gateway when I had only around five months of professional experience. I took ownership of it myself and designed it to be fully config-driven, so limits, bucket sizes, and even the algorithm could be changed without touching the code. It became a scalable and reusable solution for the team."
+    "exceptionalAbility": "Most proud of the distributed rate limiter I designed and owned on our API gateway at five months in. Fully config-driven — limits, bucket sizes, and algorithm change without touching code — and reusable across the team.",
+    "aboutMore": "Before DeepIntent I shipped Go services on PubMatic’s Activate DSP bidding path. Outside work I add video-ad support to Prebid Server and publish tools like an MCP GraphQL adapter and a Spring Cloud Config Server."
   },
   "experience": [
     {
@@ -132,6 +133,7 @@
       "logoUrlDark": "logos/deepintent.jpg",
       "companyUrl": "https://www.deepintent.com",
       "location": "Pune, Maharashtra, India",
+      "team": "Inventory team · DSP",
       "domain": "AdTech / DSP",
       "summary": "Owned and built a distributed rate limiter on the Go API gateway, improving system stability and protecting downstream services.",
       "stack": [
@@ -152,10 +154,7 @@
         "Docker",
         "MySQL",
         "ClickHouse",
-        "BigQuery",
         "Google Cloud Storage",
-        "AWS S3",
-        "Druid",
         "OpenTelemetry",
         "Tempo",
         "Loki"
@@ -167,13 +166,13 @@
         "Reporting and measurement",
         "Outcomes",
         "Publisher Marketplace",
-        "User spend analysis",
-        "Druid-powered dashboards"
+        "User spend analysis"
       ],
       "achievements": [
-        "Owned the rate limiter end-to-end on the AdTech/DSP platform.",
-        "Built and maintained distributed, scalable backend services.",
-        "Day-to-day with Java, Spring Boot, GraphQL, Kafka, Redis, and Kubernetes."
+        "Owned a config-driven distributed rate limiter on the Go API gateway — Redis enforcement, with sliding window, token bucket, and leaky bucket behind configuration.",
+        "Built campaign, inventory, and marketplace backends on Spring Boot and GraphQL used across live DSP workflows.",
+        "Shipped AI campaign alerting (Daksh) and an inventory recommendation path over Spark, Airflow, ClickHouse, and Spring Boot APIs.",
+        "Built GraphQL / dataloader instrumentation and wired Redis, ClickHouse, OkHttp, and MySQL through the OTEL agent, with the collector on gRPC into Tempo, Loki, and Grafana."
       ]
     },
     {
@@ -191,7 +190,7 @@
       "location": "Pune, India",
       "domain": "AdTech / DSP",
       "team": "Activate — DSP Bidder Team",
-      "summary": "Activate DSP bidder team.",
+      "summary": "Activate DSP bidder team. Built and shipped Go services on a high-throughput real-time bidding path.",
       "stack": [
         "Go"
       ],
@@ -207,8 +206,9 @@
         "Bidding"
       ],
       "achievements": [
-        "Contributed to distributed backend systems on a programmatic advertising platform.",
-        "Worked inside high-throughput AdTech and DSP systems."
+        "Software Engineer on the Activate DSP bidder team.",
+        "Built and shipped Go services on the real-time bidding path — bid requests, pacing, and auction decisions.",
+        "Worked inside latency-sensitive, high-throughput programmatic advertising systems."
       ]
     }
   ],
@@ -226,16 +226,6 @@
       ]
     },
     {
-      "id": "databases",
-      "label": "Databases",
-      "visible": true,
-      "items": [
-        "MySQL",
-        "PostgreSQL",
-        "ClickHouse"
-      ]
-    },
-    {
       "id": "backend",
       "label": "Backend",
       "visible": true,
@@ -249,6 +239,17 @@
       ]
     },
     {
+      "id": "databases",
+      "label": "Databases",
+      "visible": true,
+      "items": [
+        "MySQL",
+        "PostgreSQL",
+        "ClickHouse",
+        "Redis"
+      ]
+    },
+    {
       "id": "systems",
       "label": "Distributed systems",
       "visible": true,
@@ -257,23 +258,28 @@
         "Redis",
         "Debezium",
         "Microservices",
-        "Event-driven architecture"
+        "Event-driven architecture",
+        "OpenTelemetry"
       ]
     },
     {
-      "id": "infra",
-      "label": "Cloud & infrastructure",
+      "id": "cloud-otel",
+      "label": "Cloud, Infrastructure & OpenTelemetry",
       "visible": true,
       "items": [
+        "GCS",
+        "AWS S3",
         "Docker",
         "Kubernetes",
-        "OpenTelemetry"
+        "Grafana",
+        "Tempo",
+        "Loki"
       ]
     },
     {
       "id": "ai",
       "label": "AI / LLM",
-      "visible": false,
+      "visible": true,
       "items": [
         "OpenAI",
         "LangChain",
@@ -281,6 +287,17 @@
         "MCP",
         "AI Agents",
         "RAG"
+      ]
+    },
+    {
+      "id": "infra",
+      "label": "Cloud & infrastructure",
+      "visible": false,
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "AWS S3",
+        "GCS"
       ]
     },
     {
@@ -384,18 +401,17 @@
       "name": "Distributed Rate Limiter",
       "role": "Backend · DeepIntent",
       "kind": "company",
+      "experienceId": "deepintent",
       "visible": true,
       "safeToPublish": true,
-      "featured": true,
+      "featured": false,
       "screenshot": "",
       "logoUrl": "",
       "href": "",
-      "text": "Gateway-level limiter with MySQL config, Debezium sync, and Redis enforcement. Sliding window, token bucket, and leaky bucket behind configuration.",
+      "text": "Gateway-level limiter with Redis enforcement. <br> Token bucket (primary), sliding window, and leaky bucket behind configuration.",
       "stack": [
         "Go",
-        "Redis",
-        "MySQL",
-        "Debezium"
+        "Redis"
       ],
       "architecture": "Gateway → configuration → MySQL → Debezium → Redis → request enforcement",
       "details": {
@@ -420,7 +436,49 @@
           "Redis-backed dynamic configuration"
         ]
       },
-      "metrics": []
+      "metrics": [],
+      "lane": "eng-init"
+    },
+    {
+      "id": "activate-bidder",
+      "name": "Activate DSP Bidder",
+      "role": "Backend · PubMatic",
+      "kind": "company",
+      "experienceId": "pubmatic",
+      "visible": true,
+      "safeToPublish": true,
+      "screenshot": "",
+      "logoUrl": "",
+      "href": "",
+      "text": "Real-time bidding path on the Activate DSP. High-throughput Go services for bid requests, pacing, and auction decisions.",
+      "stack": [
+        "Go",
+        "DSP",
+        "RTB"
+      ],
+      "metrics": [],
+      "featured": false,
+      "lane": "pubmatic-bidder"
+    },
+    {
+      "id": "pubmatic-bidder-services",
+      "name": "Bidder backend services",
+      "role": "Backend · PubMatic",
+      "kind": "company",
+      "experienceId": "pubmatic",
+      "visible": true,
+      "safeToPublish": true,
+      "screenshot": "",
+      "logoUrl": "",
+      "href": "",
+      "text": "Distributed backend work on a programmatic advertising platform — latency-sensitive services inside the bidder stack.",
+      "stack": [
+        "Go",
+        "Distributed systems"
+      ],
+      "metrics": [],
+      "featured": false,
+      "lane": "pubmatic-bidder"
     },
     {
       "id": "terminal-portfolio",
@@ -429,11 +487,11 @@
       "kind": "personal",
       "visible": true,
       "safeToPublish": true,
-      "featured": true,
+      "featured": false,
       "screenshot": "",
       "logoUrl": "",
       "href": "https://github.com/Tanmay-Thanvi",
-      "text": "Terminal-styled site with a Go backend and a self-contained RAG assistant.",
+      "text": "Terminal-styled portfolio with a Go backend, first-party analytics, and a self-contained RAG assistant.",
       "stack": [
         "Go",
         "Next.js",
@@ -445,11 +503,11 @@
     {
       "id": "image-piracy",
       "name": "Image Piracy Detection",
-      "role": "College · Veritas-sponsored",
-      "kind": "side",
+      "role": "B.E Final year project",
+      "kind": "open-source",
       "visible": true,
       "safeToPublish": true,
-      "featured": false,
+      "featured": true,
       "screenshot": "",
       "logoUrl": "",
       "href": "",
@@ -469,14 +527,17 @@
       "name": "Media Packages Platform",
       "role": "Backend · DeepIntent",
       "kind": "company",
-      "visible": false,
-      "safeToPublish": false,
+      "experienceId": "deepintent",
+      "visible": true,
+      "safeToPublish": true,
       "logoUrl": "",
-      "href": "",
+      "href": "https://deepintent.com/capabilities/media-packages",
       "text": "Backend platform used across campaigns — media packages, campaign inventory, APIs, and production workflows.",
       "stack": [
-        "Java",
-        "APIs"
+        "Spring Boot",
+        "MySQL",
+        "Debezium",
+        "GraphQL"
       ],
       "metrics": [
         {
@@ -484,23 +545,30 @@
           "value": "1,031+",
           "safeToPublish": false
         }
-      ]
+      ],
+      "featured": false,
+      "lane": "team"
     },
     {
       "id": "publisher-intel",
-      "name": "Publisher Intelligence Platform",
+      "name": "Publisher Resolution System",
       "role": "Backend / data · DeepIntent",
       "kind": "company",
-      "visible": false,
-      "safeToPublish": false,
+      "experienceId": "deepintent",
+      "visible": true,
+      "safeToPublish": true,
       "logoUrl": "",
       "href": "",
-      "text": "Backend and data-pipeline work on a large publisher dataset used by downstream applications.",
+      "text": [
+        "Transforms <strong>Jounce Media</strong> snapshots (~5M records daily) into publisher metadata in MySQL via <br> Spark & Airflow DAG.",
+        "Used by downstream services for reporting, targeting, and other publisher-aware workflows."
+      ],
       "stack": [
         "Python",
+        "Spark",
         "Airflow",
         "MySQL",
-        "Druid"
+        "ClickHouse"
       ],
       "metrics": [
         {
@@ -513,40 +581,49 @@
           "value": "200K+",
           "safeToPublish": false
         }
-      ]
+      ],
+      "featured": false,
+      "lane": "team"
     },
     {
       "id": "recommendation-engine",
       "name": "Inventory Recommendation Engine",
       "role": "Backend · DeepIntent",
       "kind": "company",
-      "visible": false,
-      "safeToPublish": false,
+      "experienceId": "deepintent",
+      "visible": true,
+      "safeToPublish": true,
       "logoUrl": "",
       "href": "",
-      "text": "Inventory recommendation system connecting backend APIs with data-science services over async workflows and WebSockets.",
+      "text": "Inventory recommendation system connecting Spring Boot APIs with data-science services over Spark, Airflow, and ClickHouse.",
       "stack": [
         "Python",
-        "APIs",
-        "WebSocket"
+        "Spark",
+        "Airflow",
+        "ClickHouse",
+        "Spring Boot"
       ],
-      "metrics": []
+      "metrics": [],
+      "featured": false,
+      "lane": "team"
     },
     {
       "id": "daksh",
       "name": "Daksh — AI Campaign Alerting",
       "role": "Backend · DeepIntent",
       "kind": "company",
-      "visible": false,
-      "safeToPublish": false,
+      "experienceId": "deepintent",
+      "visible": true,
+      "safeToPublish": true,
       "logoUrl": "",
       "href": "",
-      "text": "AI-powered campaign alerting. Campaign events generated automated alerts and workflows.",
+      "text": "AI-powered campaign alerting requested by Campaign Managers and TAMs — campaign events generate automated alerts and workflows.",
       "stack": [
+        "Python",
+        "FastAPI",
         "Kafka",
         "OpenAI",
-        "Slack",
-        "Java"
+        "Slack"
       ],
       "metrics": [
         {
@@ -554,69 +631,128 @@
           "value": "~4,930",
           "safeToPublish": false
         }
-      ]
+      ],
+      "featured": false,
+      "lane": "request"
     },
     {
       "id": "inventory-data",
       "name": "Inventory / Data Engineering",
       "role": "Data exposure · DeepIntent",
       "kind": "company",
-      "visible": false,
-      "safeToPublish": false,
+      "experienceId": "deepintent",
+      "visible": true,
+      "safeToPublish": true,
       "logoUrl": "",
       "href": "",
       "text": "Data-side initiatives: inventory strategy, deal health forecasting, commitment tracker.",
       "stack": [
         "Spark",
         "Airflow",
-        "Druid",
+        "ClickHouse",
         "MySQL",
-        "BigQuery",
-        "GCS",
-        "AWS S3"
+        "GCS"
       ],
-      "metrics": []
+      "metrics": [],
+      "featured": false,
+      "lane": "team"
     },
     {
       "id": "mcp-graphql",
       "name": "MCP GraphQL Adapter",
       "role": "AI / platform",
-      "kind": "side",
-      "visible": false,
-      "safeToPublish": false,
+      "kind": "open-source",
+      "visible": true,
+      "safeToPublish": true,
       "logoUrl": "",
-      "href": "",
+      "href": "https://github.com/Tanmay-Thanvi/mcp-graphql-adapter",
       "text": "Exposes GraphQL APIs as MCP tools, dynamically registers them, and lets agents call existing APIs through a runtime registry.",
       "stack": [
         "MCP",
         "GraphQL",
         "AI agents"
       ],
-      "metrics": []
+      "metrics": [],
+      "featured": true
+    },
+    {
+      "id": "config-server",
+      "name": "Spring Cloud Config Server",
+      "role": "Platform",
+      "kind": "open-source",
+      "visible": true,
+      "safeToPublish": true,
+      "logoUrl": "",
+      "href": "https://github.com/Tanmay-Thanvi/di-config-server-demo",
+      "text": "Git-backed centralized config for microservices. Replaced an IntelliJ secrets-sync plugin with a portable Spring Cloud Config Server.",
+      "stack": [
+        "Java",
+        "Spring Cloud Config"
+      ],
+      "metrics": [],
+      "featured": false
+    },
+    {
+      "id": "di-intellij-plugin",
+      "name": "DI IntelliJ Plugin",
+      "role": "Open source",
+      "kind": "open-source",
+      "visible": true,
+      "safeToPublish": true,
+      "logoUrl": "",
+      "href": "https://github.com/Tanmay-Thanvi/DI-Intellej-Plugin",
+      "text": "IntelliJ plugin (Java / Groovy) to auto-inject secrets and run DeepIntent startup scripts. Later replaced by the Spring Cloud Config Server.",
+      "stack": [
+        "Java",
+        "Groovy",
+        "IntelliJ SDK"
+      ],
+      "metrics": [],
+      "featured": false
+    },
+    {
+      "id": "logo-crawler",
+      "name": "Smart Logo Crawler",
+      "role": "Open source",
+      "kind": "open-source",
+      "visible": true,
+      "safeToPublish": true,
+      "logoUrl": "",
+      "href": "https://github.com/Tanmay-Thanvi/logo-crawler",
+      "text": "Concurrent Go crawler that fetches and validates publisher logos with a worker pool and rate limits.",
+      "stack": [
+        "Go"
+      ],
+      "metrics": [],
+      "featured": false
     },
     {
       "id": "observability",
-      "name": "Distributed tracing / observability",
+      "name": "Distributed tracing",
       "role": "Platform · DeepIntent",
       "kind": "company",
-      "visible": false,
-      "safeToPublish": false,
+      "experienceId": "deepintent",
+      "visible": true,
+      "safeToPublish": true,
       "logoUrl": "",
       "href": "",
-      "text": "OpenTelemetry + Tempo + Loki. Tracing for inter-service calls and MySQL. Exploring Redis, ClickHouse, BigQuery, GCS, S3, Lambda, HTTP.",
+      "text": "Instrumented GraphQL, dataloaders, Redis, ClickHouse, OkHttp, and MySQL with the OTEL agent, including inter-service traces. Collector over gRPC to Tempo, Loki, and Grafana.",
       "stack": [
         "OpenTelemetry",
+        "OTEL Collector",
         "Tempo",
         "Loki",
         "Grafana"
       ],
-      "metrics": []
+      "metrics": [],
+      "featured": false,
+      "lane": "eng-init"
     },
     {
       "id": "notifications",
       "name": "Notification system (design)",
       "role": "LLD / HLD",
-      "kind": "side",
+      "kind": "open-source",
       "visible": false,
       "safeToPublish": false,
       "logoUrl": "",
@@ -628,7 +764,8 @@
         "SSE",
         "Redis"
       ],
-      "metrics": []
+      "metrics": [],
+      "featured": false
     },
     {
       "id": "exocortex",
@@ -645,14 +782,15 @@
         "MCP",
         "Agents"
       ],
-      "metrics": []
+      "metrics": [],
+      "featured": false
     },
     {
       "id": "pict-forum",
       "name": "PICT Discussion Forum",
       "role": "College · May 2021 – Aug 2021",
-      "kind": "side",
-      "visible": false,
+      "kind": "open-source",
+      "visible": true,
       "safeToPublish": true,
       "logoUrl": "",
       "href": "",
@@ -664,18 +802,19 @@
         "PHP",
         "MySQL"
       ],
-      "metrics": []
+      "metrics": [],
+      "featured": false
     },
     {
       "id": "reverse-coding",
       "name": "Reverse Coding — Credenz-22",
-      "role": "College · PISB",
-      "kind": "side",
-      "visible": false,
+      "role": "PISB (PICT IEEE Student Branch)",
+      "kind": "open-source",
+      "visible": true,
       "safeToPublish": true,
       "logoUrl": "",
       "href": "",
-      "text": "Online coding quiz platform for Credenz-22. Complete backend. Played by 250+ students.",
+      "text": "Online coding quiz platform for Credenz-22, built for PISB (PICT IEEE Student Branch). Complete backend. Played by 250+ students.",
       "stack": [
         "Django",
         "Django REST Framework"
@@ -686,7 +825,8 @@
           "value": "250+",
           "safeToPublish": true
         }
-      ]
+      ],
+      "featured": false
     }
   ],
   "leadership": [
@@ -696,7 +836,7 @@
       "role": "Technical Head",
       "linkedinTitle": "Volunteer — PICT IEEE Student Branch",
       "dates": "Dec 2021 – Mar 2022",
-      "visible": false,
+      "visible": true,
       "logoUrl": "",
       "text": "Technical leadership for IEEE student branch. Built Reverse Coding backend for Credenz-22.",
       "stack": [
@@ -710,7 +850,7 @@
       "org": "PICT CSI Student Branch (PCSB)",
       "role": "Mobile App Head",
       "dates": "",
-      "visible": false,
+      "visible": true,
       "logoUrl": "",
       "text": "Led an app team of nearly 25 students.",
       "stack": [
@@ -726,7 +866,7 @@
       "issued": "April 2026",
       "credentialId": "",
       "logoUrl": "",
-      "visible": false
+      "visible": true
     },
     {
       "id": "codiesalert-solidity",
@@ -735,7 +875,7 @@
       "issued": "October 2022",
       "credentialId": "a84702633e8f908f",
       "logoUrl": "",
-      "visible": true
+      "visible": false
     },
     {
       "id": "greatlearning-python",
@@ -744,7 +884,7 @@
       "issued": "February 2022",
       "credentialId": "",
       "logoUrl": "",
-      "visible": true
+      "visible": false
     },
     {
       "id": "dell-fullstack",
@@ -753,7 +893,7 @@
       "issued": "June 2021",
       "credentialId": "44043",
       "logoUrl": "",
-      "visible": true
+      "visible": false
     },
     {
       "id": "kodekloud-ai-llm-rag",
@@ -804,11 +944,14 @@
         "logoUrl": "",
         "kind": "Open-source contribution",
         "status": "in-progress",
+        "featured": true,
         "repo": "prebid/prebid-server",
         "href": "https://github.com/prebid/prebid-server",
-        "text": "Adding video ad support to the DeepIntent bid adapter.",
-        "stack": ["Go"],
-        "meta": "Work in progress — PR link coming soon",
+        "text": "Adding video ad support to the DeepIntent bid adapter on Prebid Server — the open-source auction engine used across the ad-tech ecosystem.",
+        "stack": [
+          "Go"
+        ],
+        "meta": "Featured contribution — PR link coming soon",
         "visible": true
       }
     ],
@@ -818,6 +961,20 @@
         "title": "DevHeat Devsprint",
         "subtitle": "Team PICTIANS — Google Developer Student Clubs, IIIT Surat",
         "meta": "60-hour devsprint · November 2021",
+        "visible": true
+      },
+      {
+        "id": "pisb-tech-head",
+        "title": "Technical Head — PICT IEEE Student Branch",
+        "subtitle": "Built the Reverse Coding backend for Credenz-22 (250+ players)",
+        "meta": "Dec 2021 – Mar 2022",
+        "visible": true
+      },
+      {
+        "id": "pcsb-app-head",
+        "title": "Mobile App Head — PICT CSI Student Branch",
+        "subtitle": "Led an app team of nearly 25 students",
+        "meta": "",
         "visible": true
       }
     ],
@@ -830,7 +987,7 @@
         "href": "",
         "date": "",
         "readTime": "",
-        "visible": true
+        "visible": false
       },
       {
         "id": "sample-blog-rag-portfolio",
@@ -840,7 +997,7 @@
         "href": "",
         "date": "",
         "readTime": "",
-        "visible": true
+        "visible": false
       }
     ]
   },

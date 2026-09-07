@@ -1,54 +1,62 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import content from "./data/content.json";
 import { useTheme } from "./hooks/useTheme.js";
-import Sidebar from "./components/Sidebar.jsx";
-import TabNav from "./components/TabNav.jsx";
-import ResumeTab from "./components/ResumeTab.jsx";
-import WorkTab from "./components/WorkTab.jsx";
-import HighlightsTab from "./components/HighlightsTab.jsx";
-import ContactTab from "./components/ContactTab.jsx";
+import SiteHeader from "./components/SiteHeader.jsx";
+import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
+import SkillsBand from "./components/SkillsBand.jsx";
+import Experience from "./components/Experience.jsx";
+import Projects from "./components/Projects.jsx";
+import Recognition from "./components/Recognition.jsx";
+import Education from "./components/Education.jsx";
+import SiteFooter from "./components/SiteFooter.jsx";
+
+const NAV = [
+  { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" },
+];
 
 export default function App() {
-  const [tab, setTab] = useState("resume");
   const { theme, toggleTheme } = useTheme();
-  const bodyRef = useRef(null);
+  const [active, setActive] = useState("about");
 
   useEffect(() => {
-    if (bodyRef.current) bodyRef.current.scrollTop = 0;
-  }, [tab]);
+    const onScroll = () => {
+      const marker = window.scrollY + 120;
+      let next = "about";
+      for (const item of NAV) {
+        const el = document.getElementById(item.id);
+        if (el && el.offsetTop <= marker) next = item.id;
+      }
+      setActive(next);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <div className="app-shell">
-      <div className="app-frame">
-        <Sidebar
-          content={content}
-          theme={theme}
-          onToggleTheme={toggleTheme}
-        />
-
-        <main className="main-panel">
-          <TabNav
-            active={tab}
-            onChange={setTab}
-            theme={theme}
-            onToggleTheme={toggleTheme}
-          />
-          <div className="panel-divider" />
-          <div className="panel-body" ref={bodyRef}>
-            {tab === "resume" && <ResumeTab content={content} theme={theme} />}
-            {tab === "work" && <WorkTab content={content} theme={theme} />}
-            {tab === "highlights" && (
-              <HighlightsTab content={content} theme={theme} />
-            )}
-            {tab === "contact" && <ContactTab content={content} />}
-          </div>
-        </main>
-      </div>
-
-      <footer className="site-footer">
-        © {new Date().getFullYear()} {content.identity.name}. All rights
-        reserved.
-      </footer>
-    </div>
+    <>
+      <SiteHeader
+        content={content}
+        nav={NAV}
+        active={active}
+        theme={theme}
+        onToggleTheme={toggleTheme}
+      />
+      <main id="top">
+        <Hero content={content} />
+        <About content={content} />
+        <SkillsBand content={content} />
+        <Experience content={content} />
+        <Projects content={content} />
+        <Recognition content={content} />
+        <Education content={content} />
+        <SiteFooter content={content} />
+      </main>
+    </>
   );
 }

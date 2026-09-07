@@ -10,10 +10,10 @@ install:
 	npm install
 
 dev:
-	npm run dev -- --host 127.0.0.1 --port 5173
+	npm run dev -- --host 0.0.0.0 --port 5173
 
 build:
 	npm run build
 
 preview:
-	npm run preview -- --host 127.0.0.1 --port 4173
+	npm run preview -- --host 0.0.0.0 --port 4173
