@@ -13,7 +13,7 @@
     "initials": "TT",
     "title": "Backend Engineer",
     "oneLiner": "Backend engineer with 2+ years in AdTech at PubMatic and DeepIntent — Java, Go, distributed systems, scalable APIs, and AI/LLM backends.",
-    "differentiator": "AdTech + Distributed Systems + AI",
+    "differentiator": "Distributed Systems + AdTech + AI",
     "summary": "I turn AdTech / DSP requirements into dependable backend systems — from gateway rate limiting and real-time bidding to GraphQL APIs, data pipelines, and AI-assisted tooling.",
     "years": "2+ years",
     "email": "tanmaythanvi15@gmail.com",
@@ -118,7 +118,7 @@
     "contactHeadline": "Let’s build what’s next.",
     "contactBody": "Open to conversations about backend, platform, and AdTech roles.",
     "exceptionalAbility": "Most proud of the distributed rate limiter I designed and owned on our API gateway at five months in. Fully config-driven — limits, bucket sizes, and algorithm change without touching code — and reusable across the team.",
-    "aboutMore": "Before DeepIntent I shipped Go services on PubMatic’s Activate DSP bidding path. Outside work I add video-ad support to Prebid Server and publish tools like an MCP GraphQL adapter and a Spring Cloud Config Server."
+    "aboutMore": "Before DeepIntent I interned on PubMatic’s Activate DSP bidder team, shipping Go services on the real-time bidding path. Outside work I add video-ad support to Prebid Server and publish tools like an MCP GraphQL adapter and a Spring Cloud Config Server."
   },
   "experience": [
     {
@@ -178,8 +178,8 @@
     {
       "id": "pubmatic",
       "company": "PubMatic",
-      "role": "Software Engineer",
-      "dates": "2024",
+      "role": "Software Engineer Intern",
+      "dates": "Jan 2024 – Jul 2024",
       "current": false,
       "visible": true,
       "mark": "P",
@@ -190,14 +190,15 @@
       "location": "Pune, India",
       "domain": "AdTech / DSP",
       "team": "Activate — DSP Bidder Team",
-      "summary": "Activate DSP bidder team. Built and shipped Go services on a high-throughput real-time bidding path.",
+      "summary": "Activate DSP bidder team. Built Synchronizer and async Aerospike caching on the bidding path.",
       "stack": [
-        "Go"
+        "Go",
+        "Aerospike"
       ],
       "architecture": [
         "Golang",
         "DSP bidding",
-        "Backend services",
+        "Aerospike",
         "Distributed systems"
       ],
       "domainAreas": [
@@ -206,9 +207,8 @@
         "Bidding"
       ],
       "achievements": [
-        "Software Engineer on the Activate DSP bidder team.",
-        "Built and shipped Go services on the real-time bidding path — bid requests, pacing, and auction decisions.",
-        "Worked inside latency-sensitive, high-throughput programmatic advertising systems."
+        "Developed the Synchronizer for Activate, preloading feature flags into Aerospike to eliminate runtime lookups and improve bidding workflow efficiency by 50%.",
+        "Engineered an asynchronous Aerospike caching pipeline that moved ADM generation and Tagalong delivery off the critical request path to reduce bidder latency."
       ]
     }
   ],
@@ -441,7 +441,7 @@
     },
     {
       "id": "activate-bidder",
-      "name": "Activate DSP Bidder",
+      "name": "Activate Synchronizer",
       "role": "Backend · PubMatic",
       "kind": "company",
       "experienceId": "pubmatic",
@@ -450,11 +450,11 @@
       "screenshot": "",
       "logoUrl": "",
       "href": "",
-      "text": "Real-time bidding path on the Activate DSP. High-throughput Go services for bid requests, pacing, and auction decisions.",
+      "text": "Preloaded feature flags into Aerospike for PubMatic’s Activate DSP, eliminating runtime lookups and improving bidding workflow efficiency by 50%.",
       "stack": [
         "Go",
-        "DSP",
-        "RTB"
+        "Aerospike",
+        "Activate DSP"
       ],
       "metrics": [],
       "featured": false,
@@ -462,7 +462,7 @@
     },
     {
       "id": "pubmatic-bidder-services",
-      "name": "Bidder backend services",
+      "name": "Async bidder cache",
       "role": "Backend · PubMatic",
       "kind": "company",
       "experienceId": "pubmatic",
@@ -471,10 +471,10 @@
       "screenshot": "",
       "logoUrl": "",
       "href": "",
-      "text": "Distributed backend work on a programmatic advertising platform — latency-sensitive services inside the bidder stack.",
+      "text": "Asynchronous Aerospike cache that moved ADM generation and Tagalong delivery off the critical request path to cut bidder latency.",
       "stack": [
         "Go",
-        "Distributed systems"
+        "Aerospike"
       ],
       "metrics": [],
       "featured": false,
@@ -793,7 +793,7 @@
       "visible": true,
       "safeToPublish": true,
       "logoUrl": "",
-      "href": "",
+      "href": "https://github.com/Tanmay-Thanvi/Discussion-Forum-Final",
       "text": "Internet discussion/forum platform for longer-form posts.",
       "stack": [
         "HTML",
@@ -813,7 +813,7 @@
       "visible": true,
       "safeToPublish": true,
       "logoUrl": "",
-      "href": "",
+      "href": "https://github.com/Tanmay-Thanvi/Reverse-Coding",
       "text": "Online coding quiz platform for Credenz-22, built for PISB (PICT IEEE Student Branch). Complete backend. Played by 250+ students.",
       "stack": [
         "Django",
@@ -826,6 +826,42 @@
           "safeToPublish": true
         }
       ],
+      "featured": false
+    },
+    {
+      "id": "health-link",
+      "name": "Health Link",
+      "role": "College",
+      "kind": "open-source",
+      "visible": true,
+      "safeToPublish": true,
+      "logoUrl": "",
+      "href": "https://github.com/Tanmay-Thanvi/Health-Link",
+      "text": "Django healthcare app with doctor and patient accounts, medical history, appointments, schedules, and prescriptions.",
+      "stack": [
+        "Django",
+        "HTML",
+        "SQLite"
+      ],
+      "metrics": [],
+      "featured": false
+    },
+    {
+      "id": "pas",
+      "name": "PAS",
+      "role": "College",
+      "kind": "open-source",
+      "visible": true,
+      "safeToPublish": true,
+      "logoUrl": "",
+      "href": "https://github.com/Tanmay-Thanvi/PAS",
+      "text": "Practical assessment system for engineering labs — batches, subjects, practicals, and student scores.",
+      "stack": [
+        "Django",
+        "HTML",
+        "SQLite"
+      ],
+      "metrics": [],
       "featured": false
     }
   ],
@@ -866,7 +902,7 @@
       "issued": "April 2026",
       "credentialId": "",
       "logoUrl": "",
-      "visible": true
+      "visible": false
     },
     {
       "id": "codiesalert-solidity",
@@ -902,7 +938,7 @@
       "issued": "",
       "credentialId": "",
       "logoUrl": "",
-      "visible": true
+      "visible": false
     },
     {
       "id": "udemy-golang-concurrency",
@@ -911,7 +947,7 @@
       "issued": "November 2025",
       "credentialId": "UC-f4b9a9e1-5d3c-4832-b7cc-67bba8b02ea2",
       "logoUrl": "",
-      "visible": true
+      "visible": false
     },
     {
       "id": "iitkgp-python-basics",
@@ -946,34 +982,58 @@
         "status": "in-progress",
         "featured": true,
         "repo": "prebid/prebid-server",
-        "href": "https://github.com/prebid/prebid-server",
+        "href": "https://github.com/prebid/prebid-server/pull/4718",
+        "refs": [
+          {
+            "label": "Prebid PR",
+            "href": "https://github.com/prebid/prebid-server/pull/4718"
+          },
+          {
+            "label": "My PR",
+            "href": "https://github.com/sourabhg/prebid-server/pull/1"
+          }
+        ],
         "text": "Adding video ad support to the DeepIntent bid adapter on Prebid Server — the open-source auction engine used across the ad-tech ecosystem.",
         "stack": [
           "Go"
         ],
-        "meta": "Featured contribution — PR link coming soon",
+        "meta": "Upstream PR open; enhancements in my follow-up PR",
         "visible": true
       }
     ],
     "achievements": [
       {
-        "id": "gdsc-devheat",
-        "title": "DevHeat Devsprint",
-        "subtitle": "Team PICTIANS — Google Developer Student Clubs, IIIT Surat",
-        "meta": "60-hour devsprint · November 2021",
+        "id": "astonishing-avengers",
+        "title": "Astonishing Avengers Award — DeepIntent",
+        "subtitle": "Led an API squad to design and deliver the Media Packages backend",
+        "meta": "",
         "visible": true
       },
       {
-        "id": "pisb-tech-head",
-        "title": "Technical Head — PICT IEEE Student Branch",
-        "subtitle": "Built the Reverse Coding backend for Credenz-22 (250+ players)",
-        "meta": "Dec 2021 – Mar 2022",
+        "id": "dsa-leetcode",
+        "title": "200+ DSA problems · 1500+ LeetCode rating",
+        "subtitle": "",
+        "meta": "",
         "visible": true
       },
       {
-        "id": "pcsb-app-head",
-        "title": "Mobile App Head — PICT CSI Student Branch",
-        "subtitle": "Led an app team of nearly 25 students",
+        "id": "sudocode-winner",
+        "title": "Winner — SudoCode Hackathon 2022",
+        "subtitle": "",
+        "meta": "",
+        "visible": true
+      },
+      {
+        "id": "devheat-runner-up",
+        "title": "Runner-up — DevHeat Hackathon",
+        "subtitle": "IIIT Surat",
+        "meta": "",
+        "visible": true
+      },
+      {
+        "id": "club-leadership",
+        "title": "Tech Head & Mobile App Head",
+        "subtitle": "Technical Head, PICT IEEE Student Branch · Mobile App Head, PICT CSI Student Branch",
         "meta": "",
         "visible": true
       }

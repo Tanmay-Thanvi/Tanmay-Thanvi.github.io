@@ -12,6 +12,42 @@ function kindLabel(kind) {
   return kind.replace(/-/g, " ");
 }
 
+function ProjectBox({ item, className, children }) {
+  const wholeCard = item.href && !(item.refs && item.refs.length);
+  if (wholeCard) {
+    return (
+      <a
+        className={`${className} card-link`}
+        href={item.href}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {children}
+      </a>
+    );
+  }
+  return <article className={className}>{children}</article>;
+}
+
+function CardRefs({ refs }) {
+  if (!refs?.length) return null;
+  return (
+    <div className="card-refs">
+      {refs.map((ref) => (
+        <a
+          key={ref.href}
+          href={ref.href}
+          target="_blank"
+          rel="noreferrer"
+          className="card-ref"
+        >
+          {ref.label} <ExternalLinkIcon />
+        </a>
+      ))}
+    </div>
+  );
+}
+
 export default function Projects({ content }) {
   const [query, setQuery] = useState("");
   const work = visibleWork(content);
@@ -30,6 +66,7 @@ export default function Projects({ content }) {
       text: item.text,
       stack: item.stack,
       href: item.href,
+      refs: item.refs,
     })),
   ].sort((a, b) => {
     const ia = FEATURED_ORDER.indexOf(a.id);
@@ -50,6 +87,7 @@ export default function Projects({ content }) {
         text: item.text,
         stack: item.stack,
         href: item.href,
+        refs: item.refs,
       }));
     const HISTORY_ORDER = [
       "config-server",
@@ -57,6 +95,8 @@ export default function Projects({ content }) {
       "di-intellij-plugin",
       "terminal-portfolio",
       "reverse-coding",
+      "health-link",
+      "pas",
       "pict-forum",
     ];
     const all = [...rest, ...extra].sort((a, b) => {
@@ -80,9 +120,12 @@ export default function Projects({ content }) {
           <div>
             <p className="eyebrow">04 / Selected work</p>
             <h2 className="display section-title">
-              Recent, flagship,
+              {/* Recent, flagship,
               <br />
-              high stakes.
+              high stakes. */}
+              Systems I ship,
+              <br />
+              and share.
             </h2>
           </div>
           <p>
@@ -92,20 +135,15 @@ export default function Projects({ content }) {
 
         <div className="featured-grid">
           {featured.map((item) => (
-            <article className="card reveal" key={item.id}>
+            <ProjectBox item={item} className="card reveal" key={item.id}>
               <div className="card-top">
                 <div className="card-mark">{item.name[0]}</div>
                 <span className="card-date">{item.role}</span>
               </div>
               <p className="card-kicker">{kindLabel(item.kind)}</p>
               <h3 className="display">
-                {item.href ? (
-                  <a href={item.href} target="_blank" rel="noreferrer">
-                    {item.name} <ExternalLinkIcon />
-                  </a>
-                ) : (
-                  item.name
-                )}
+                {item.name}
+                {item.href && !item.refs?.length && <ExternalLinkIcon />}
               </h3>
               <p>
                 <RichText text={item.text} />
@@ -117,7 +155,8 @@ export default function Projects({ content }) {
                   </span>
                 ))}
               </div>
-            </article>
+              <CardRefs refs={item.refs} />
+            </ProjectBox>
           ))}
         </div>
 
@@ -137,24 +176,19 @@ export default function Projects({ content }) {
 
         <div className="history-grid">
           {history.map((item) => (
-            <article className="card history-card reveal" key={item.id}>
+            <ProjectBox item={item} className="card history-card reveal" key={item.id}>
               <div className="card-top">
                 <span className="card-date">{item.role}</span>
               </div>
               <h3>
-                {item.href ? (
-                  <a href={item.href} target="_blank" rel="noreferrer">
-                    {item.name} <ExternalLinkIcon />
-                  </a>
-                ) : (
-                  item.name
-                )}
+                {item.name}
+                {item.href && <ExternalLinkIcon />}
               </h3>
               <p>
                 <RichText text={item.text} />
               </p>
               <p className="stack">{(item.stack || []).join(" · ")}</p>
-            </article>
+            </ProjectBox>
           ))}
           {history.length === 0 && <p className="card-date">No matching projects.</p>}
         </div>

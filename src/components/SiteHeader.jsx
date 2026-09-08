@@ -1,9 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle.jsx";
 
 export default function SiteHeader({ content, nav, active, theme, onToggleTheme }) {
   const [open, setOpen] = useState(false);
   const initials = content.identity.initials || "TT";
+
+  useEffect(() => {
+    const header = document.querySelector(".site-header");
+    const viewport = window.visualViewport;
+    if (!header) return undefined;
+
+    const pin = () => {
+      const offset = viewport ? viewport.offsetTop : 0;
+      header.style.transform = `translate3d(0, ${offset}px, 0)`;
+    };
+
+    pin();
+    viewport?.addEventListener("scroll", pin);
+    viewport?.addEventListener("resize", pin);
+    window.addEventListener("scroll", pin, { passive: true });
+    return () => {
+      viewport?.removeEventListener("scroll", pin);
+      viewport?.removeEventListener("resize", pin);
+      window.removeEventListener("scroll", pin);
+    };
+  }, []);
 
   return (
     <header className="site-header">

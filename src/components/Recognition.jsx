@@ -2,7 +2,6 @@ import { TrophyIcon } from "./icons.jsx";
 
 export default function Recognition({ content }) {
   const items = (content.highlights?.achievements || []).filter((i) => i.visible);
-  const certs = (content.certifications || []).filter((c) => c.visible);
 
   return (
     <section className="block recog-block">
@@ -21,22 +20,11 @@ export default function Recognition({ content }) {
               <TrophyIcon />
               <div>
                 <h3>{item.title}</h3>
-                <p>
-                  {item.subtitle}
-                  {item.meta ? ` · ${item.meta}` : ""}
-                </p>
-              </div>
-            </div>
-          ))}
-          {certs.slice(0, 3).map((c) => (
-            <div className="recog-item" key={c.id}>
-              <TrophyIcon />
-              <div>
-                <h3>{c.name}</h3>
-                <p>
-                  {c.issuer}
-                  {c.issued ? ` · ${c.issued}` : ""}
-                </p>
+                {(item.subtitle || item.meta) && (
+                  <p>
+                    {[item.subtitle, item.meta].filter(Boolean).join(" · ")}
+                  </p>
+                )}
               </div>
             </div>
           ))}
