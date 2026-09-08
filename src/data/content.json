@@ -3,7 +3,7 @@
   "site": {
     "title": "Tanmay Thanvi — Software Engineer",
     "description": "Backend-focused software engineer building reliable APIs, platforms, and cloud systems.",
-    "canonical": "https://tanmay-thanvi.github.io/portfolio-gui/",
+    "canonical": "https://tanmay-thanvi.github.io/",
     "ogTitle": "Tanmay Thanvi — Software Engineer",
     "ogDescription": "Backend-focused software engineer building reliable APIs, platforms, and cloud systems."
   },
@@ -48,7 +48,7 @@
     },
     "site": {
       "label": "Site",
-      "href": "https://tanmay-thanvi.github.io/portfolio-gui/"
+      "href": "https://tanmay-thanvi.github.io/"
     }
   },
   "rail": {
