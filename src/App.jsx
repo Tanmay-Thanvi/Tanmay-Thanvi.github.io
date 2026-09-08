@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import content from "./data/content.json";
 import { useTheme } from "./hooks/useTheme.js";
+import { useGoogleAnalytics } from "./hooks/useGoogleAnalytics.js";
 import SiteHeader from "./components/SiteHeader.jsx";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
@@ -22,6 +23,7 @@ const NAV = [
 export default function App() {
   const { theme, toggleTheme } = useTheme();
   const [active, setActive] = useState("about");
+  useGoogleAnalytics(content.site?.gaMeasurementId);
 
   useEffect(() => {
     const onScroll = () => {
