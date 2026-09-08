@@ -17,6 +17,9 @@ pnpm-debug.log*
 .env
 .env.*
 
+# Local resume — site links to Drive only
+public/resume.pdf
+
 # Editor / OS
 .vscode/*
 !.vscode/extensions.json
