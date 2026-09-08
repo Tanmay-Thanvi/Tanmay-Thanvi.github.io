@@ -1,5 +1,11 @@
+function publicUrl(path) {
+  if (!path) return "";
+  if (/^https?:\/\//.test(path)) return path;
+  return `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+}
+
 export default function Mark({ logoUrl, logoUrlDark, logoFill, mark, alt, theme }) {
-  const src = theme === "dark" && logoUrlDark ? logoUrlDark : logoUrl;
+  const src = publicUrl(theme === "dark" && logoUrlDark ? logoUrlDark : logoUrl);
 
   if (src) {
     const onDark = logoFill && theme === "dark";
